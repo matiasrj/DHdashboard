@@ -1,4 +1,9 @@
 import './App.css';
+import './assets/css/styles.css';
+import './assets/css/styles_Home.css';
+import './assets/css/styles_products.css';
+
+
 import Contenido from './components/Contenido';
 // import './public/css/styles';
 import Footer from './components/Footer';

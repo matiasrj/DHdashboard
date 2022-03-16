@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import EncabezadoTablaProducto from './EncabezadoTablaProducto';
 import ProductCard from './ProductCard';
 
-class  TablaProductos extends Component{
+class  DashboardProductos extends Component{
     state = {productos:[]}
 
     // eslint-disable-next-line no-useless-constructor
@@ -27,14 +26,14 @@ class  TablaProductos extends Component{
         
         return(
             <>
-            <table>
-                <EncabezadoTablaProducto/>
-
+           <h3> Bienvenidos a la seccion de productos</h3>
+            <section className="products">
                {this.state.productos.length===0? 'Cargando...': 
                  this.state.productos.map((el,id)=> <ProductCard  key={el + id} el = {el} /> )
                 }
-               
-            </table>
+
+               </section>
+          
             </>
 
         ) 
@@ -42,4 +41,4 @@ class  TablaProductos extends Component{
 }
 
 
-export default TablaProductos
+export default DashboardProductos

@@ -1,9 +1,9 @@
 import React from 'react'
 
 
-function ProductCard({el}){
+function UserCard({el}){
 
-    let {name, description, price} = el;
+    let {email, id,firstName} = el;
     
     return ( 
         
@@ -12,11 +12,11 @@ function ProductCard({el}){
              {/* <img src="/images/Iphone.png" alt="Iphone"> */}
            
              <div className="body-card">
-                 <p className="title-card"> {name}</p>
-                 <p className="price-card"> u$s {price}</p>
+                 <p className="title-card">ID User: {id}</p>
+                 <p className="price-card">Mail: {email}</p>
                      
              </div>
-             <p className="desc-card"> {description}</p>
+             <p className="desc-card">Nombre: {firstName}</p>
          
          </article>
          </div>
@@ -24,4 +24,4 @@ function ProductCard({el}){
 }
 
 
-export default ProductCard
+export default UserCard
