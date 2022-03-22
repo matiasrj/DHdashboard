@@ -13,7 +13,7 @@ class DashboardCategorias extends Component{
 
 
     componentDidMount(){
-        fetch('http://localhost:3001/api/category')
+        fetch('https://supermercado-dh.herokuapp.com/api/category')
        .then(response => response.json())
        .then(data => {
            console.log(data)

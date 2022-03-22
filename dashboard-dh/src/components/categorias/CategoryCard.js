@@ -12,11 +12,11 @@ function CategoryCard({el}){
              {/* <img src="/images/Iphone.png" alt="Iphone"> */}
            
              <div className="body-card">
-                 <p className="title-card">ID User: {id}</p>
-                 <p className="price-card">Mail: {name}</p>
+                 <p className="title-card">ID : {id}</p>
+                 <p className="price-card">Categoria: {name}</p>
                      
              </div>
-             <p className="desc-card">Nombre: {createdAt}</p>
+             <p className="desc-card">Creado: {createdAt}</p>
          
          </article>
          </div>

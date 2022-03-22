@@ -11,7 +11,7 @@ class  DashboardProductos extends Component{
     }
 
     componentDidMount(){
-         fetch('http://localhost:3001/api/products/')
+         fetch('https://supermercado-dh.herokuapp.com/api/products/')
         .then(response => response.json())
         .then(data => {
             console.log(data)
